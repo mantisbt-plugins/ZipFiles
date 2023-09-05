@@ -1,0 +1,56 @@
+########################################################
+# 	Mantis Bugtracker Add-On
+# 	ZipFiles Version 2.00
+#	2023 plugin by Cas Nuy www.NUY.info
+########################################################
+
+This plugin allows for compression of attachments.
+
+
+********************************************************************************************
+* Installation                                                                             *
+********************************************************************************************
+We need to add a signal in core/file_api.php to enable this plugin
+Find function file_attach_files and add the following line:
+	event_signal('EVENT_ZIP_FILES', array( &$t_file ) );
+just before :
+	# $p_bug_id, array $p_file, $p_table = 'bug', $p_title = '', $p_desc = '', $p_user_id = null, $p_date_added = 0, $p_skip_bug_update = false, $p_bugnote_id = 0
+	$t_file_infos[] = file_add(
+
+The rest is like any other plugin. 
+After copying to your webserver :
+- Start mantis ad administrator
+- Select manage
+- Select manage Plugins
+- Select Install behind ZipFiles 2.00
+- Once installed, click on the plugin-name for further configuration.
+
+********************************************************************************************
+Configuration options                                                                      *
+********************************************************************************************
+(De)Activate this plugin
+			'zip_attachments'							=> ON,
+Fikle extenstions to evaluate
+			'zip_attachments_included_extensions'		=> 'txt,csv',
+Minimum size of attachement
+			'zip_attachments_minimum_size'				=> 1024,
+Minimum compression ratio required
+			'zip_attachments_minimum_compress_ratio'	=> 40,
+
+
+********************************************************************************************
+License                                                                                    *
+********************************************************************************************
+This plugin is distributed under the same conditions as Mantis itself.
+
+********************************************************************************************
+Mantis Issue                                                                               *
+********************************************************************************************
+https://github.com/mantisbt-plugins/ZipFiles
+
+********************************************************************************************
+Greetings                                                                                  *
+********************************************************************************************
+Cas Nuy 
+cas@nuy.info
+http://www.nuy.info
