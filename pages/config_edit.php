@@ -13,4 +13,4 @@ plugin_config_set( 'zip_attachments_included_extensions', $f_zip_attachments_inc
 plugin_config_set( 'zip_attachments_minimum_size', $f_zip_attachments_minimum_size );
 plugin_config_set( 'zip_attachments_minimum_compress_ratio', $f_zip_attachments_minimum_compress_ratio );
 // redirect
-print_successful_redirect( plugin_page( 'config',TRUE ) );
+print_header_redirect( plugin_page( 'config',TRUE ) );
