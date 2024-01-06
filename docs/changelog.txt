@@ -1,1 +1,2 @@
 Version 2.00		01-09-2023		Initial release
+Version 2.01		06-01-2024		Replaced deprecated function print_succesful_redirect with print_header_redirect
