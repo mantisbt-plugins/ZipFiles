@@ -1,7 +1,7 @@
 <?php
 auth_reauthenticate();
 access_ensure_global_level( config_get( 'manage_plugin_threshold' ) );
-layout_page_header( lang_get( 'ZipFiles' ) );
+layout_page_header(  'ZipFiles'  );
 layout_page_begin( 'config_page.php' );
 print_manage_menu();
 ?>
@@ -13,7 +13,7 @@ print_manage_menu();
 <div class="widget-header widget-header-small">
 	<h4 class="widget-title lighter">
 		<i class="ace-icon fa fa-text-width"></i>
-		<?php echo lang_get( 'ZipFiles' ) . ': ' . lang_get( 'plugin_format_config' )?>
+		<?php echo lang_get( 'plugin_ZipFiles' ) . ': ' . plugin_lang_get( 'config' )?>
 	</h4>
 </div>
 <div class="widget-body">

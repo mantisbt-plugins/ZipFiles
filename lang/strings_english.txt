@@ -1,4 +1,7 @@
 <?php
+
+# Copyright (c) 2011 Robert Munteanu (robert@lmn.ro)
+
 # Zip export plugin for MantisBT is free software: 
 # you can redistribute it and/or modify it under the terms of the GNU
 # General Public License as published by the Free Software Foundation, 
@@ -22,3 +25,4 @@ $s_zip_attachments_minimum_size = 'Minimum file size for compressing';
 $s_zip_attachments_minimum_compress_ratio = 'Minimum compression ratio required';
 $s_no_zip = 'Do Not use compression';
 $s_yes_zip = 'Compress selected file types';
+$s_plugin_ZipFiles_config = 'Configuration';
